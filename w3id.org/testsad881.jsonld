@@ -2,7 +2,7 @@
   "id": "https://w3id.org/testsad881",
   "type": "Concept",
   "prefLabel": {
-    "de": "Index Test"
+    "en": "Index Test"
   },
   "broader": {
     "id": "https://w3id.org/tests1d57c",
