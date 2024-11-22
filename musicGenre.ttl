@@ -1,7 +1,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
-@prefix bla: <https://w3id.org/>.1f55d
+@prefix bla: <https://w3id.org/>.
 
 bla:
     a skos:ConceptScheme;
