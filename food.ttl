@@ -1,0 +1,47 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix food: <https://w3id.org/>.
+
+food:
+    a skos:ConceptScheme;
+    dct:title "Food"@de;
+    vann:preferredNamespaceUri food:;
+    skos:hasTopConcept food:19958, food:41b79, food:b1422 .
+food:02d3d a skos:Concept; skos:inScheme food: .
+
+food:1236d
+    a skos:Concept;
+    skos:broader food:cb9d1;
+    skos:inScheme food:;
+    skos:prefLabel "White Toast"@en.
+food:19958
+    a skos:Concept;
+    skos:narrower food:02d3d, food:cb9d1;
+    skos:prefLabel "Bread"@en;
+    skos:topConceptOf food: .
+food:41b79
+    a skos:Concept;
+    skos:narrower food:557a6, food:aa951;
+    skos:prefLabel "Spread"@en;
+    skos:topConceptOf food: .
+food:557a6
+    a skos:Concept;
+    skos:broader food:41b79;
+    skos:inScheme food:;
+    skos:prefLabel "Nutella"@en.
+food:aa951 a skos:Concept; skos:inScheme food: .
+
+food:b1422 a skos:Concept; skos:prefLabel "Cheese"@en; skos:topConceptOf food: .
+
+food:cb56e
+    a skos:Concept;
+    skos:broader food:cb9d1;
+    skos:inScheme food:;
+    skos:prefLabel "Whole Grain Toast"@en.
+food:cb9d1
+    a skos:Concept;
+    skos:broader food:19958;
+    skos:inScheme food:;
+    skos:narrower food:1236d, food:cb56e;
+    skos:prefLabel "Toast"@en.
