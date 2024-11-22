@@ -1,0 +1,44 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix w3i: <https://w3id.org/>.
+
+w3i:tests
+    a skos:ConceptScheme;
+    dct:description "My wonderful vocabulary."@en;
+    dct:title "Tests"@en;
+    vann:preferredNamespaceUri w3i:tests;
+    skos:hasTopConcept w3i:tests00195, w3i:tests1d57c, w3i:tests42b76 .
+w3i:tests00195
+a skos:Concept; skos:prefLabel "Usability Test"@en; skos:topConceptOf w3i:tests.
+w3i:tests1d57c
+    a skos:Concept;
+    skos:narrower w3i:testsad881;
+    skos:prefLabel "Web App Test"@en;
+    skos:topConceptOf w3i:tests.
+w3i:tests3b132
+    a skos:Concept;
+    skos:broader w3i:tests42b76;
+    skos:inScheme w3i:tests;
+    skos:prefLabel "Statistics"@en.
+w3i:tests42b76
+    a skos:Concept;
+    skos:narrower w3i:tests3b132, w3i:tests98f36;
+    skos:prefLabel "Integration Test"@en;
+    skos:topConceptOf w3i:tests.
+w3i:tests4a18a
+    a skos:Concept;
+    skos:broader w3i:tests98f36;
+    skos:inScheme w3i:tests;
+    skos:prefLabel "Transformation Test"@en.
+w3i:tests98f36
+    a skos:Concept;
+    skos:broader w3i:tests42b76;
+    skos:inScheme w3i:tests;
+    skos:narrower w3i:tests4a18a;
+    skos:prefLabel "Funcionality test"@en.
+w3i:testsad881
+    a skos:Concept;
+    skos:broader w3i:tests1d57c;
+    skos:inScheme w3i:tests;
+    skos:prefLabel "Index Test"@de.
