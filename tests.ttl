@@ -41,4 +41,4 @@ w3i:testsad881
     a skos:Concept;
     skos:broader w3i:tests1d57c;
     skos:inScheme w3i:tests;
-    skos:prefLabel "Index Test"@de.
+    skos:prefLabel "Index Test"@en.
