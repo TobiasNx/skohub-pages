@@ -1,36 +1,36 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
-@prefix https://example.com: <https://w3id.org/>.
+@prefix gardenTool: <https://w3id.org/>.
 
-https://example.com:
+gardenTool:
     a skos:ConceptScheme;
     dct:description "My wonderful garden tool vocabulary"@en;
     dct:title "Garden Tools"@en;
-    vann:preferredNamespaceUri https://example.com:;
+    vann:preferredNamespaceUri gardenTool:;
     skos:hasTopConcept
-        https://example.com:8baf5, https://example.com:c8456,
-        https://example.com:d244d.
-https://example.com:8baf5
+        gardenTool:8baf5, gardenTool:c8456,
+        gardenTool:d244d.
+gardenTool:8baf5
     a skos:Concept;
     skos:prefLabel "Spate"@en, "Spaten"@de;
-    skos:topConceptOf https://example.com: .
-https://example.com:aa9c2
+    skos:topConceptOf gardenTool: .
+gardenTool:aa9c2
     a skos:Concept;
-    skos:broader https://example.com:d244d;
-    skos:inScheme https://example.com:;
+    skos:broader gardenTool:d244d;
+    skos:inScheme gardenTool:;
     skos:prefLabel "Beetgabel"@de, "Border Fork"@en.
-https://example.com:c8456
+gardenTool:c8456
     a skos:Concept;
     skos:prefLabel "Schere"@de, "Scissors"@en;
-    skos:topConceptOf https://example.com: .
-https://example.com:cc7af
+    skos:topConceptOf gardenTool: .
+gardenTool:cc7af
     a skos:Concept;
-    skos:broader https://example.com:d244d;
-    skos:inScheme https://example.com:;
+    skos:broader gardenTool:d244d;
+    skos:inScheme gardenTool:;
     skos:prefLabel "Mulch Fork"@en, "Mulchgabel"@de.
-https://example.com:d244d
+gardenTool:d244d
     a skos:Concept;
-    skos:narrower https://example.com:aa9c2, https://example.com:cc7af;
+    skos:narrower gardenTool:aa9c2, gardenTool:cc7af;
     skos:prefLabel "Fork"@en, "Gabel"@de;
-    skos:topConceptOf https://example.com: .
+    skos:topConceptOf gardenTool: .
